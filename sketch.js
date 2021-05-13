@@ -51,7 +51,7 @@ function draw() {
   background(230);
   Engine.update(engine);
   textSize(25);
-  text("Press Space to get a second Chance to Play!!",50 ,50);
+  text("",50 ,50);
   image(boy ,200,340,200,300);
   
 
@@ -91,7 +91,7 @@ function draw() {
 
 //create mouseDragged function here
 function mouseDragged(){
-  Matter.Body.setPosition(stone.body,{x:mouseX, y:mouseY})
+  Matter.Body.setPosition(stoneObj.body,{x:mouseX, y:mouseY})
    
 }
 function mouseReleased(){
